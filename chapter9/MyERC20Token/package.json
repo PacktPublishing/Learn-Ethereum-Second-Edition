@@ -1,0 +1,27 @@
+{
+  "name": "myERC20Token",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "dev": "lite-server",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+      "solc": "^0.8.7-fixed",
+      "truffle": "^5.1.58",
+      "web3": "^1.7.0"
+  },
+   "devDependencies": {
+      "lite-server": "^2.3.0",
+      "coveralls": "^3.1.0",
+      "ganache-cli": "^6.12.2",
+      "solhint": "^3.3.4",
+      "solidity-coverage": "^0.7.16"
+  }
+}
