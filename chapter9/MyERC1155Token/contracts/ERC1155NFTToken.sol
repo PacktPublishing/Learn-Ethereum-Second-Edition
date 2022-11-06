@@ -19,12 +19,12 @@ contract ERC1155NFTToken  is ERC1155 {
     uint256 public constant Storm = 6;
 
     constructor() ERC1155("https://ipfs.io/ipfs/bafybeifcatfkx7jehcieim4ujuf6rin7jqcqjkqwdvtra3stpndgmznydm/{id}.json") {
-        _mint(msg.sender, MomentOfSilence, 1, "");
-        _mint(msg.sender, Finchwing, 1, "");
-        _mint(msg.sender, GirlAndBird, 1, "");
-        _mint(msg.sender, Kitty, 1, "");
-        _mint(msg.sender, MargayCat, 1, "");
-        _mint(msg.sender, Nighthill, 1, "");
-        _mint(msg.sender, Storm, 1, "");
+        _mint(msg.sender, MomentOfSilence, 10, "");
+        _mint(msg.sender, Finchwing, 10, "");
+        _mint(msg.sender, GirlAndBird, 10, "");
+        _mint(msg.sender, Kitty, 10, "");
+        _mint(msg.sender, MargayCat, 10, "");
+        _mint(msg.sender, Nighthill, 10, "");
+        _mint(msg.sender, Storm, 10, "");
     }
 }
