@@ -60,7 +60,6 @@ const main = async () => {
     }
     console.log('Get the L1 Bridge token balance')
     const finalL1BridgeTokenBalance = await l1MyERC20Token.balanceOf(l1GatewayAddress)
-    console.log('Initial L1 Bridge token balance is ',initialBridgeTokenBalance)
     console.log('Transfered token amount is ',tokenAmount)
     console.log('Current L1 Bridge token balance is ', finalL1BridgeTokenBalance)
     
