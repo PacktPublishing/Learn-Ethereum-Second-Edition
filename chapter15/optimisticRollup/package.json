@@ -1,0 +1,25 @@
+{
+  "name": "optimistic-rollup-example",
+  "version": "1.0.0",
+  "description": "example for arbitrum rollup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "arbitrum",
+    "Rollup"
+  ],
+  "author": "brian",
+  "license": "ISC",
+  "devDependencies": {
+    "@nomiclabs/hardhat-ethers": "^2.0.2",
+    "ethers": "^5.2.0",
+    "hardhat": "^2.12.6",
+  },
+  "dependencies": {
+    "@arbitrum/sdk": "^3.0.0",
+    "@openzeppelin/contracts": "^4.8.1",
+    "dotenv": "^16.0.3"
+  }
+}
