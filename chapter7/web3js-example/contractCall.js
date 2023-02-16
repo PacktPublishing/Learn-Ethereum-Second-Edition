@@ -9,7 +9,7 @@ const contractJsonFile = fs.readFileSync('orders.json');
 const contract = JSON.parse(contractJsonFile);
 
 const fromAddress = '0x5381E3e6b740C82b294653711cF16619D68b71B8'
-// 3. Create address variables
+// 2. Create address variables
 const accountFrom = {
     privateKey: `${process.env.privateKey}`,
     address: fromAddress,

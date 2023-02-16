@@ -21,11 +21,14 @@ async function getAccountBalances(web3, accounts) {
 }
 async function main() {
     let web3= await getWeb3()
+    //get accounts
     let accounts = await getAccounts(web3)
     console.dir(accounts)
+    //create an account
     let password = '!@superpassword';
     let account = await createAccount(web3, password)
     console.log(`account created: ${account}`)
+    // get all accounts balances
     await getAccountBalances(web3, accounts)
     accounts = await getAccounts(web3)
     console.log("Total accounts are: ")

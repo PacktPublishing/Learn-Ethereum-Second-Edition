@@ -9,7 +9,7 @@ const contractJsonFile = fs.readFileSync('orders.json');
 const contract = JSON.parse(contractJsonFile);
 
 const fromAddress = '0x5381E3e6b740C82b294653711cF16619D68b71B8'
-// 3. Create address variables
+// 2. Create address variables
 const accountFrom = {
     privateKey: `${process.env.privateKey}`,
     address: fromAddress,
@@ -32,7 +32,7 @@ const setOrder = async () => {
     `Calling the setOrder function in contract at address: ${contractAddress}`
   );
 
-  // Sign Tx with PK
+  // 7.Sign Tx with PK
   const createTransaction = await web3.eth.accounts.signTransaction(
     {
       to: contractAddress,
@@ -42,7 +42,7 @@ const setOrder = async () => {
     accountFrom.privateKey
   );
 
-  // Send Tx and Wait for Receipt
+  // 8. Send Tx and Wait for Receipt
   const createReceipt = await web3.eth.sendSignedTransaction(createTransaction.rawTransaction);
   console.log(`Tx successful with hash: ${createReceipt.transactionHash}`);
 };
