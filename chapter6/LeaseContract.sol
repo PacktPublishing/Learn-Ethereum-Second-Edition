@@ -129,7 +129,7 @@ contract LeaseContract {
         lease.landlord.transfer(msg.value);
     }
     
-    /* terminiate the lease when it is mature*/
+    /* terminate the lease when it is mature*/
     function leaseDue() public
     inState(LeaseState.Occupied)
     onlyLandlord
