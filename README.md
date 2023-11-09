@@ -7,3 +7,12 @@
 Code: <b>USD75OFF</b>
 
 # Learn-Ethereum-Second-Edition
+
+## Errata
+* Page 388: The _function removeAdmin_ should be:
+  ```
+  function removeAdmin(address account) external onlyOwner {
+    require(account != address(0) && admins[account]);
+    admins[account] = false;
+  }
+```
